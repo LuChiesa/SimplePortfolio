@@ -70,6 +70,7 @@ main {
   }
   .nav-list {
     position: absolute;
+    display: none;
     top: 8vh;
     right: 0;
     width: 50vw;
@@ -92,6 +93,7 @@ main {
 
 .nav-list.active {
   transform: translateX(0);
+  display: flex;
 }
 
 @keyframes navLinkFade {
@@ -143,7 +145,7 @@ main {
     height: 80vh;
     width: 80vw;
     background: var(--clr-1);
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
   
     position: relative;
   }
@@ -152,7 +154,7 @@ main {
   .card::after {
     content: "";
     position: absolute;
-    inset: -0.3rem;
+    inset: 0rem;
     z-index: -1;
     background: conic-gradient(
       from var(--gradient-angle),
@@ -179,9 +181,67 @@ main {
     }
   }
   /* CARD */
-  .profile-picture > img:nth-child(1) {
-    display: grid;
-    height: 250px;
-    width: 250px;
-    }
+  /*SECTIONS */
+  section{
+    padding: top 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  }
+
+  .section-container{
+    display: flex;
+  }
+  /* PROFILE SECTION */
+
+  #profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  .section--pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  .text-section{
+    align-self: center;
+    text-align: center;
+  }
+  .text-section p{
+    font-weight: 600;
+  }
+  .text-section-p1{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #fff;
+  }
+  .text-section-p2{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #fff;}
+
+  .title{
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: #000 -1px -1px;
+  }
+  #social-container{
+    display: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  /* ICON */
+
+  .icon{
+    cursor: pointer;
+    height: 2rem;
+  }
   

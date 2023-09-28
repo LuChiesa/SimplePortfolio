@@ -288,3 +288,15 @@ cursor: pointer;
 .btn-container{
   gap: 1rem;
 }
+
+/* ABOUT ME */
+
+.aboutMe-content{
+  display: flex;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 20px;
+  margin: 25px;
+  padding: 10px;
+}
+

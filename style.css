@@ -292,8 +292,13 @@ cursor: pointer;
 /* ABOUT ME */
 
 .aboutMe-content{
-  height: 200px;
-  width: 200px;
   display: flex;
-  background-color: red;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: #000 -1px -1px;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  height: 100%;
 }
